@@ -13,10 +13,10 @@ class Entrenamiento(
         }
         return contadorCalorias
     }
-    private fun ejercicioMayorCalorias() : Ejercicio{
-        var ejercicioMayor : Ejercicio = this.ejercicios[0]
+    private fun ejercicioMayorCalorias() : Ejercicio?{
+        var ejercicioMayor : Ejercicio? = null
         for(ejercicioTemp in ejercicios){
-            if (ejercicioTemp.calorias() > ejercicioMayor.calorias()){
+            if (ejercicioMayor == null || ejercicioTemp.calorias() > ejercicioMayor.calorias() ) {
                 ejercicioMayor = ejercicioTemp
             }
         }

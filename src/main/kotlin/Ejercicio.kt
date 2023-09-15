@@ -1,4 +1,4 @@
-abstract class Ejercicio (
+abstract class Ejercicio(
     var nombre : String,
     var coeficienteDeAjuste : Double
 ){

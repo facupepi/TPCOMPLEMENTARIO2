@@ -16,11 +16,12 @@ class GestorDeEntrenamientos {
 
     fun socioMasEnergico() : String{
         var mejorSocio = ""
-        val mayoresCalorias = 0.0
+        var mayoresCalorias = 0.0
 
         for (entrenamientoTemp in entrenamientos){
             if(entrenamientoTemp.totalCalorias() > mayoresCalorias){
                 mejorSocio = entrenamientoTemp.socio
+                mayoresCalorias = entrenamientoTemp.totalCalorias()
             }
         }
         return mejorSocio

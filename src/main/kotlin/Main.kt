@@ -20,7 +20,7 @@ fun main() {
     gestor.agregarEntrenamiento(entrenamiento2)
 
     println( "Ejercicios del socio Facundo: ${gestor.ejerciciosDelSocio("Facundo")}" )
-    println( "Ejercicios del socio Facundo: ${gestor.ejerciciosDelSocio("Santiago")}" )
+    println( "Ejercicios del socio Santiago: ${gestor.ejerciciosDelSocio("Santiago")}" )
 
     println( "El socio mas enérgico fue: ${gestor.socioMasEnergico()}" )
 }
